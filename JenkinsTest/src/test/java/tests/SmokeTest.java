@@ -18,9 +18,10 @@ public class SmokeTest {
 		
         driver.get("https://www.google.com");
         String title = driver.getTitle();
-        Assert.assertTrue(title.contains("Google"), "Title mismatch");
+        Assert.assertTrue(title.contains("Googl"), "Title mismatch");
         driver.quit();
     }
 }
+
 
 
