@@ -16,10 +16,9 @@ public class SmokeTest {
     	 WebDriverManager.chromedriver().setup();
          driver = new ChromeDriver();
         driver.get("https://www.google.com");
-
         String title = driver.getTitle();
         Assert.assertTrue(title.contains("Google"), "Title mismatch");
-
         driver.quit();
     }
 }
+
